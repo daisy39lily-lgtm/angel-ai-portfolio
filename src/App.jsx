@@ -8,6 +8,7 @@ import PricingSection  from './components/PricingSection';
 import SkillsSection   from './components/SkillsSection';
 import ContactSection  from './components/ContactSection';
 import SiteFooter      from './components/SiteFooter';
+import EmailShowcaseSection from './components/EmailShowcaseSection';
 
 // ─── Navigation config ───────────────────────────────────────────────────────
 const NAV_ITEMS = [
@@ -190,6 +191,7 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <ShowcaseSection />
+      <EmailShowcaseSection />
       <PricingSection />
       <SkillsSection />
       <ContactSection />

@@ -67,6 +67,14 @@ const services = [
     icon: '❋',
     note: 'platform-native',
   },
+  {
+    id: '09',
+    title: 'HTML EMAIL DESIGN',
+    description:
+      'Responsive, visually engaging marketing emails designed to make promotions, product launches, announcements, and campaigns look professional and drive action.',
+    icon: '✉',
+    note: 'conversion-focused',
+  },
 ];
 
 const ServicesSection = () => {

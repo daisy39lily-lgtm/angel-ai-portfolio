@@ -35,6 +35,16 @@ const pricingCards = [
     note: 'Best for e-commerce brands & premium products.',
     featured: true,
   },
+  {
+    id: 'p-04',
+    service: 'HTML EMAIL DESIGN',
+    icon: '✉',
+    tagline: 'Beautiful, responsive, engaging.',
+    tiers: [
+      { label: 'Starting at', price: 'Custom' },
+    ],
+    note: 'Custom pricing based on email complexity and campaign requirements.',
+  },
 ];
 
 const PricingSection = () => {
