@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ChevronLeft, ChevronRight, Play, Eye, Film, Image as ImageIcon } from 'lucide-react';
 import { PROJECTS_DATA, VIDEO_PROJECTS, IMAGE_PROJECTS, CATEGORIES } from '../data/projectsData';
 
@@ -143,6 +144,18 @@ const ShowcaseSection = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [activeItemIndex, activeItemsList]);
 
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (activeItemIndex !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [activeItemIndex]);
+
   return (
     <section id="showcase" className="showcase-section section-reveal" ref={sectionRef}>
       {/* ── MAIN SECTION HEADER ───────────────────────────────────────────── */}
@@ -254,13 +267,14 @@ const ShowcaseSection = () => {
       )}
 
       {/* ── LIGHTBOX PREVIEW MODAL ────────────────────────────────────────── */}
-      {activeItem && (
+      {activeItem && createPortal(
         <div className="lightbox-modal" onClick={() => setActiveItemIndex(null)}>
           {/* Close button */}
           <button
             className="lightbox-close"
             onClick={() => setActiveItemIndex(null)}
             aria-label="Close preview"
+            style={{ position: 'fixed' }}
           >
             <X size={24} />
           </button>
@@ -321,7 +335,8 @@ const ShowcaseSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
