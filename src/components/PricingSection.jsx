@@ -7,73 +7,63 @@ const pricingCards = [
     id: 'p-01',
     service: 'STATIC IMAGE AD',
     icon: '🖼️',
-    tagline: 'High-converting & effective.',
+    tagline: 'High-converting design.',
     tiers: [
       { label: 'Rate', price: '$15 – $25' },
     ],
-    note: 'Includes design, master prompts, copy and headline.',
+    note: 'High-converting design, master prompts, copy/headline included.',
   },
   {
     id: 'p-02',
-    service: 'UGC TYPE VIDEO (AI)',
-    icon: '📱',
-    tagline: 'Native and relatable.',
-    tiers: [
-      { label: 'Rate', price: '$60 – $80' },
-    ],
-    note: 'Includes AI Avatars/Voiceover, Hook, Script, B-rolls, Dynamic Subtitles.',
-  },
-  {
-    id: 'p-03',
-    service: 'IG REEL / TIKTOK AD',
-    icon: '✨',
-    tagline: 'Fast-paced & trending.',
-    tiers: [
-      { label: 'Rate', price: '$70 – $90' },
-    ],
-    note: 'Includes fast-paced editing, trending music/audio sync, scroll-stopper hook.',
-  },
-  {
-    id: 'p-04',
-    service: 'HYPER-MOTION VIDEO',
-    icon: '⚡',
-    tagline: 'Dynamic & eye-catching.',
-    tiers: [
-      { label: 'Rate', price: '$80 – $120' },
-    ],
-    note: 'Includes dynamic motion transitions, 3D elements, fast visual hooks.',
-  },
-  {
-    id: 'p-05',
-    service: 'CINEMATIC COMMERCIAL',
-    icon: '🎬',
-    tagline: 'Premium & memorable.',
-    tiers: [
-      { label: 'Rate', price: '$120 – $200+' },
-    ],
-    note: 'Premium look, high-end AI video gen, color grading, realistic lighting/vibe.',
-    featured: true,
-  },
-  {
-    id: 'p-06',
-    service: 'HTML EMAIL AD',
+    service: 'HTML EMAIL AD DESIGN',
     icon: '✉',
-    tagline: 'Responsive & engaging.',
+    tagline: 'Responsive layout.',
     tiers: [
       { label: 'Rate', price: '$35 – $60' },
     ],
     note: 'Responsive layout, graphics, call-to-action button, dark mode tested.',
   },
   {
-    id: 'p-07',
-    service: 'BUNDLES & PACKAGES',
-    icon: '📦',
-    tagline: 'Comprehensive campaigns.',
+    id: 'p-03',
+    service: 'UGC TYPE VIDEO (AI)',
+    icon: '📱',
+    tagline: 'Native and relatable.',
     tiers: [
-      { label: 'Rate', price: 'Let\'s discuss' },
+      { label: 'Rate', price: '$60 – $80' },
     ],
-    note: 'We can discuss and create custom bundles and packages tailored to your needs.',
+    note: 'AI Avatars / Voiceover, Hook, Script, B-rolls, Dynamic Subtitles.',
   },
+  {
+    id: 'p-04',
+    service: 'IG REEL / TIKTOK AD',
+    icon: '✨',
+    tagline: 'Fast-paced editing.',
+    tiers: [
+      { label: 'Rate', price: '$70 – $90' },
+    ],
+    note: 'Fast-paced editing, trending music/audio sync, scroll-stopper hook.',
+  },
+  {
+    id: 'p-05',
+    service: 'HYPER-MOTION VIDEO AD',
+    icon: '⚡',
+    tagline: 'Dynamic motion transitions.',
+    tiers: [
+      { label: 'Rate', price: '$80 – $120' },
+    ],
+    note: 'Dynamic motion transitions, 3D elements, fast visual hooks.',
+  },
+  {
+    id: 'p-06',
+    service: 'CINEMATIC PRODUCT COMMERCIAL',
+    icon: '🎬',
+    tagline: 'Premium look.',
+    tiers: [
+      { label: 'Rate', price: '$120 – $200+' },
+    ],
+    note: 'Premium look, high-end AI video gen, color grading, realistic lighting/vibe.',
+    featured: true,
+  }
 ];
 
 const PricingSection = () => {
@@ -156,9 +146,10 @@ const PricingSection = () => {
 
       {/* Custom CTA */}
       <div className="pricing-custom-cta">
-        <p className="pricing-custom-script">"Need something custom?"</p>
+        <h3 style={{fontSize: "1.5rem", fontWeight: "600", marginBottom: "0.5rem"}}>Need a custom package or ongoing bulk content?</h3>
+        <p style={{marginBottom: "2rem", color: "var(--color-text-muted)"}}>Rates are fully customizable based on your project scope.</p>
         <button className="btn-primary pricing-cta-btn" onClick={scrollToContact}>
-          Let's discuss your project →
+          Let's talk! →
         </button>
       </div>
     </section>
