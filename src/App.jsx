@@ -128,26 +128,23 @@ function App() {
           </div>
 
           {/* RIGHT SIDE — CREATIVE VISUAL COLLAGE */}
-          <div className="hero-right" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <div className="flower-wing-container" style={{ position: 'relative', width: '400px', height: '700px' }}>
-              
-              <div style={{ position: 'relative', width: '500px', height: '500px' }}>
-                
+          <div className="hero-right">
+            <div className="flower-wing-container">
+              <div className="flower-wing-inner">
                 {/* Top Right Flower */}
-                <div className="anim-float-2" style={{ position: 'absolute', top: '40px', right: '0px', zIndex: 10, transform: 'rotate(15deg)' }}>
-                  <img src="/flat_flower_nobg.png" alt="Flower" style={{ width: '280px', filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.1))' }} />
+                <div className="anim-float-2 flower-top-right">
+                  <img src="/flat_flower_nobg.png" alt="Flower" className="flower-img-tr" />
                 </div>
 
                 {/* Bottom Right Flower */}
-                <div className="anim-float-3" style={{ position: 'absolute', bottom: '20px', right: '20px', zIndex: 20, transform: 'rotate(-10deg)' }}>
-                  <img src="/flat_flower_nobg.png" alt="Flower" style={{ width: '290px', filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.1))' }} />
+                <div className="anim-float-3 flower-bottom-right">
+                  <img src="/flat_flower_nobg.png" alt="Flower" className="flower-img-br" />
                 </div>
 
                 {/* Center Left Flower (Largest, overlaps the others) */}
-                <div className="anim-float-1" style={{ position: 'absolute', top: '120px', left: '-20px', zIndex: 30, transform: 'rotate(-5deg)' }}>
-                  <img src="/flat_flower_nobg.png" alt="Flower" style={{ width: '340px', filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.15))' }} />
+                <div className="anim-float-1 flower-center-left">
+                  <img src="/flat_flower_nobg.png" alt="Flower" className="flower-img-cl" />
                 </div>
-
               </div>
             </div>
           </div>
