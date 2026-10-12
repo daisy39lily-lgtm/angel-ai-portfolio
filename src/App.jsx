@@ -129,23 +129,12 @@ function App() {
 
           {/* RIGHT SIDE — CREATIVE VISUAL COLLAGE */}
           <div className="hero-right">
-            <div className="flower-wing-container">
-              <div className="flower-wing-inner">
-                {/* Top Right Flower */}
-                <div className="anim-float-2 flower-top-right">
-                  <img src="/flat_flower_nobg.png" alt="Flower" className="flower-img-tr" />
-                </div>
-
-                {/* Bottom Right Flower */}
-                <div className="anim-float-3 flower-bottom-right">
-                  <img src="/flat_flower_nobg.png" alt="Flower" className="flower-img-br" />
-                </div>
-
-                {/* Center Left Flower (Largest, overlaps the others) */}
-                <div className="anim-float-1 flower-center-left">
-                  <img src="/flat_flower_nobg.png" alt="Flower" className="flower-img-cl" />
-                </div>
-              </div>
+            <div className="hero-flower-wrapper anim-float-1">
+              <img
+                src="/hero-flower-art.png"
+                alt="AI Creative Floral Art"
+                className="hero-flower-img"
+              />
             </div>
           </div>
         </div>

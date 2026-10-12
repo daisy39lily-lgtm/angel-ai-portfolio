@@ -324,66 +324,32 @@ button {
   box-sizing: border-box;
 }
 
-.flower-wing-container {
+.hero-flower-wrapper {
   position: relative;
-  width: 400px;
-  max-width: 100%;
-  height: 700px;
+  width: 100%;
+  max-width: 440px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flower-wing-inner {
-  position: relative;
-  width: 500px;
-  max-width: 100%;
-  height: 500px;
-}
-
-.flower-top-right {
-  position: absolute;
-  top: 40px;
-  right: 0px;
-  z-index: 10;
-  transform: rotate(15deg);
-}
-
-.flower-img-tr {
-  width: 280px;
-  max-width: 100%;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+.hero-flower-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
   display: block;
+  mix-blend-mode: multiply;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  filter: drop-shadow(0 15px 35px rgba(217, 165, 179, 0.25));
+  pointer-events: none;
+  transition: transform 0.5s ease;
 }
 
-.flower-bottom-right {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 20;
-  transform: rotate(-10deg);
-}
-
-.flower-img-br {
-  width: 290px;
-  max-width: 100%;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
-  display: block;
-}
-
-.flower-center-left {
-  position: absolute;
-  top: 120px;
-  left: -20px;
-  z-index: 30;
-  transform: rotate(-5deg);
-}
-
-.flower-img-cl {
-  width: 340px;
-  max-width: 100%;
-  filter: drop-shadow(-10px 10px 20px rgba(0,0,0,0.15));
-  display: block;
+.hero-flower-wrapper:hover .hero-flower-img {
+  transform: scale(1.02);
 }
 
 .eyebrow {
@@ -2097,20 +2063,19 @@ button {
   }
 
   .hero-right {
-    height: 460px;
+    height: auto;
+    min-height: 400px;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .flower-wing-container {
-    height: 460px;
-    max-width: 100%;
+  .hero-flower-wrapper {
+    max-width: 360px;
   }
-  .flower-wing-inner {
-    height: 460px;
-    max-width: 100%;
-    transform: scale(0.85);
-    transform-origin: center center;
+  .hero-flower-img {
+    max-width: 320px;
   }
 
   .hero-title { font-size: 3.8rem; }
@@ -2200,20 +2165,19 @@ button {
   .hero-subtitle { font-size: 1rem; }
 
   .hero-right {
-    height: 360px;
+    height: auto;
+    min-height: 320px;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .flower-wing-container {
-    height: 360px;
-    max-width: 100%;
+  .hero-flower-wrapper {
+    max-width: 320px;
   }
-  .flower-wing-inner {
-    height: 360px;
-    max-width: 100%;
-    transform: scale(0.68);
-    transform-origin: center center;
+  .hero-flower-img {
+    max-width: 280px;
   }
 
   .features-strip {
@@ -2289,22 +2253,20 @@ button {
   .hero-subtitle { font-size: 0.95rem; }
 
   .hero-right {
-    height: 280px;
+    height: auto;
+    min-height: 260px;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .flower-wing-container {
-    height: 280px;
-    max-width: 100%;
+  .hero-flower-wrapper {
+    max-width: 280px;
   }
-  .flower-wing-inner {
-    height: 280px;
-    max-width: 100%;
-    transform: scale(0.52);
-    transform-origin: center center;
+  .hero-flower-img {
+    max-width: 240px;
   }
-  .flower-center-left { left: 0; }
 
   .features-strip {
     padding: 2rem 0.5rem;
