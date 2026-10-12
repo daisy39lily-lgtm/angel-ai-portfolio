@@ -327,7 +327,7 @@ button {
 .hero-flower-wrapper {
   position: relative;
   width: 100%;
-  max-width: 440px;
+  max-width: 540px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,7 +335,7 @@ button {
 
 .hero-flower-img {
   width: 100%;
-  max-width: 380px;
+  max-width: 480px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -2072,10 +2072,10 @@ button {
     align-items: center;
   }
   .hero-flower-wrapper {
-    max-width: 360px;
+    max-width: 440px;
   }
   .hero-flower-img {
-    max-width: 320px;
+    max-width: 390px;
   }
 
   .hero-title { font-size: 3.8rem; }
@@ -2166,7 +2166,7 @@ button {
 
   .hero-right {
     height: auto;
-    min-height: 320px;
+    min-height: 340px;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -2174,10 +2174,10 @@ button {
     align-items: center;
   }
   .hero-flower-wrapper {
-    max-width: 320px;
+    max-width: 380px;
   }
   .hero-flower-img {
-    max-width: 280px;
+    max-width: 340px;
   }
 
   .features-strip {
@@ -2254,7 +2254,7 @@ button {
 
   .hero-right {
     height: auto;
-    min-height: 260px;
+    min-height: 280px;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -2262,10 +2262,10 @@ button {
     align-items: center;
   }
   .hero-flower-wrapper {
-    max-width: 280px;
+    max-width: 320px;
   }
   .hero-flower-img {
-    max-width: 240px;
+    max-width: 290px;
   }
 
   .features-strip {
