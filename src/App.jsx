@@ -131,8 +131,8 @@ function App() {
           <div className="hero-right">
             <div className="hero-flower-wrapper anim-float-1">
               <img
-                src="/hero-flower-art.png"
-                alt="AI Creative Floral Art"
+                src="/hero-floral-composition.png"
+                alt="Aesthetic Flower Visual"
                 className="hero-flower-img"
               />
             </div>
